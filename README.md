@@ -28,7 +28,7 @@ Things in each wizard with specific data-actions (next, prev, and cancel) are au
 *TIP: When attaching custom events, attach them to myWizard.parent because the wizard resets its html every cancel.* ie. `myWizard.parent.on(), not $("thing in wizard").on()`
 
 ## Properties
-**Parent**
+**Parent** 
 Example: `myWizard.parent`
 Parent holds a jQuery object of the whole wizard.
 
@@ -71,7 +71,7 @@ Returns an integer value between 0 and 100 inclusive of based on the step the us
 **Disable**
 Example: `myWizard.disable(2);` or `myWizard.disable('.myClass');`
 
-Disables the given step or any step matching a selector string, if it exists. The disabled step will not be part of the wizard workflow. 
+Disables the given step or any step matching a selector string, if it exists. The disabled step will be removed from the wizard workflow. 
 
 **Enable**
 Example `myWizard.enable(2);` or `myWizard.enable('.myClass');`
