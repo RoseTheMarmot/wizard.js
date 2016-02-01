@@ -170,11 +170,11 @@ function Wizard( parent ){
 		if( typeof step == 'number' ){
 			if(step>=0 && step<this.steps.length){
 				$step = $(this.steps[step]);
-				$step.addClass('disabled').addClass('hidden');
+				$step.addClass('disabled').hide();
 			}
 		}else if( typeof step == 'string' ){
 			$step = $(step+".step", this.parent);
-			$step.addClass('disabled').addClass('hidden');
+			$step.addClass('disabled').hide();
 		} 
 		this.init({reset:false, startAt:this.current});
 		this.onDisable( $step );
@@ -187,11 +187,11 @@ function Wizard( parent ){
 		if( typeof step == 'number' ){
 			if(step>=0 && step<this.steps.length){
 				$step = $(this.steps[step]);
-				$step.removeClass('disabled').removeClass('hidden');
+				$step.removeClass('disabled').show();
 			}
 		}else if( typeof step == 'string' ){
 			$step = $(step+".step", this.parent);
-			$step.removeClass('disabled').removeClass('hidden');
+			$step.removeClass('disabled').show();
 		}
 		this.init({reset:false, startAt:this.current});
 		this.onEnable( $step );
