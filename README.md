@@ -33,40 +33,40 @@ Example: `myWizard.parent`
 Parent holds a jQuery object of the whole wizard.
 
 ## Functions
-**Init** 
+**Init** - 
 Example: `myWizard.init({reset: false, startAt: 0});`
 
 This function gathers all the steps for the wizard (except any with the class 'disabled') and sets the approprate visibility for each one. By default the first non-disabled step is visible, but this can be specified via the startAt parameter in the config object. Setting reset to true in the config object resets the wizard to contain the html it had when it was first initialized. Passing an html string in place of a true/false statement will reset the wizard html contents to that string. This will not change the saved initial state however. To reset the saved initial state, do the following `myWizard.initState = 'html string';`.
 
-**Next** 
+**Next** - 
 Example: `myWizard.next();`
 Advances one frame in the wizard if there is a frame left. Otherwise does nothing.
 
-**Prev** 
+**Prev** - 
 Example: `myWizard.prev();`
 Goes back one fram in the wizard if there is a previous frame. Otherwise does nothing
 
-**Step** 
+**Step** - 
 Example: `myWizard.step(2);`
 Moves the wizard to the specified step. *Note: the wizard steps are indexed on 0 based indexing.*
 
-**Cancel** 
+**Cancel** - 
 Example: `myWizard.cancel();`
 Resets the wizard to it's inital state.
 
-**getStep** 
+**getStep** - 
 Example: `myWizard.getStep(2);`
 Returns a jQuery object of the specified step, if it exists. If it does not exist, returns null. *Note: the wizard steps are indexed on 0 based indexing.*
 
-**precentComplete** 
+**precentComplete** -  
 Example: `var precentComplete = mywizard.precentComplete();`
 Returns an integer value between 0 and 100 inclusive of based on the step the user is currently on and total number of steps.
 
-**Disable** 
+**Disable** - 
 Example: `myWizard.disable(2);` or `myWizard.disable('.myClass');`
 Disables the given step or any step matching a selector string, if it exists. The disabled step will be removed from the wizard workflow. 
 
-**Enable** 
+**Enable** - 
 Example `myWizard.enable(2);` or `myWizard.enable('.myClass');`
 Enables the given step or any step matching a selector string, if it exists. The enabled step will be added to the wizard workflow. 
 
