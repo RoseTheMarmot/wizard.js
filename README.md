@@ -1,5 +1,6 @@
 # wizard.js
 A basic Javascript class for a step-by-step workflow UI element using jQuery.
+[rosethemarmot.github.io/wizard.js/](http://rosethemarmot.github.io/wizard.js/)
 
 ## Introduction
 This wizard turns html markup like so:
