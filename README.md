@@ -18,9 +18,9 @@ This wizard turns html markup like so:
 
 ...into a "setup wizard" series of steps kind of thing.
 
-To use just do something like:
+To use just do:
 
-`var myWizard = new Wizard('#myWizard');`
+`var myWizard = $('#myWizard').wizard();`
 
 ...and you should be all set to do things like `myWizard.percentComplete()`, `myWizard.onNext = function(){ //my stuff here }`, etc.
 

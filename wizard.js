@@ -17,7 +17,7 @@
  *
  * To use just do something like:
  *
- * 		var myWizard = new Wizard('#myWizard');
+ * 		var myWizard = $('#myWizard').wizard();
  *
  * ...and you should be all set to do things like myWizard.percentComplete(), 
  * myWizard.onNext = function(){ //my stuff here }, etc.
@@ -69,6 +69,7 @@ function Wizard( parent ){
 		}
 		//gathering steps
 		this.steps = parent.find('.step').not('.disabled');
+		$('.step.disabled').hide();
 		if( options['startAt'] && typeof options['startAt'] == 'number' && options['startAt'] >= 0 && options['startAt'] < this.steps.length ){
 			this.current = options['startAt'];
 		}else{
@@ -234,3 +235,12 @@ function Wizard( parent ){
 		thisWizard.scrollIntoView();
 	});
 }
+
+//adding to jQuery
+var w = {
+	wizard: function(){
+		$parent = $(this);
+		return new Wizard($parent);
+	}
+}
+jQuery.fn.extend(w);
