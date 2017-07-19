@@ -4,7 +4,8 @@ A basic Javascript class for a step-by-step workflow UI element using jQuery.
 
 ## Introduction
 This wizard turns html markup like so:
-`<div class="wizard" id="myWizard">
+```
+<div class="wizard" id="myWizard">
  	<div class="step">
  		bla bla bla
  		<button data-action="next">Next</button>
@@ -14,7 +15,8 @@ This wizard turns html markup like so:
  		bla bla bla
  		<button data-action="cancel">Cancel</button>
  	</div>
-</div>`
+</div>
+```
 
 ...into a "setup wizard" series of steps kind of thing.
 
