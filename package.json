@@ -1,0 +1,14 @@
+{
+  "name": "wizard.js",
+  "version": "2.0.0",
+  "description": "A basic Javascript class for a step-by-step workflow UI element using jQuery.",
+  "repository": "https://github.com/RoseTheMarmot/wizard.js",
+  "licence": "",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}
