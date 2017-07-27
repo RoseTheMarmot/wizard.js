@@ -4,11 +4,9 @@
   "description": "A basic Javascript class for a step-by-step workflow UI element using jQuery.",
   "repository": "https://github.com/RoseTheMarmot/wizard.js",
   "licence": "",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
+    "jasmine": "^2.6.0"
   },
-  "scripts": {
-  }
+  "scripts": {}
 }
