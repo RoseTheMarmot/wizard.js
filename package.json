@@ -8,5 +8,7 @@
   "devDependencies": {
     "jasmine": "^2.6.0"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "jasmine"
+  }
 }
